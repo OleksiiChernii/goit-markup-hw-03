@@ -84,13 +84,8 @@ body{
     color: var(--primary-grey);
 }
 
-.section-about .title{
-    font-size: 36px;
-    line-height: calc(42.19/36);
-    text-align: center;
-}
-
-.section-team .section-title{
+.section-about .title,
+.section-team .title{
     font-size: 36px;
     line-height: calc(42.19/36);
     text-align: center;
@@ -131,6 +126,11 @@ body{
 .page-footer .logo,
 .page-footer .link.address{
     color: var(--primary-white);
+}
+
+.page-footer .link:hover,
+.page-footer .link:focus{
+    color: var(--accent);
 }
 
 .section-works .button{
