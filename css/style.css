@@ -42,6 +42,16 @@ img{
     width: 1200px;
     padding: 0 15px;
 }
+.section{
+    padding: 94px 0px;
+}
+
+.section .title{
+    font-size: 36px;
+    line-height: calc(42.19/36);
+    text-align: center;
+}
+
 /* Navigations */
 
 .header-navigation{
@@ -141,6 +151,7 @@ img{
 
 .section-features .title{
     font-size: 14px;
+    text-align: left;
     text-transform: uppercase;
     line-height: calc(16.41/14);
     margin-bottom: 10px;
@@ -149,11 +160,6 @@ img{
 .section-features .description{
     line-height: calc(24/14);
     color: var(--primary-grey);
-}
-
-.section-features .list{
-    margin-top: 94px;
-    margin-bottom: 136px;
 }
 
 .section-features .item:not(:last-child){
@@ -168,23 +174,9 @@ img{
     width: 270px;
 }
 
-.section .title{
-    font-size: 36px;
-    line-height: calc(42.19/36);
-    text-align: center;
-}
-
 .section.about .list{
     display: flex;
-}
-
-.section.about .title{
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
-
-.section.about .list{
-    margin-bottom: 94px;
+    margin-top: 50px;
 }
 
 .section.about .item:not(:last-child){
@@ -193,8 +185,6 @@ img{
 
 .section.team{
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .section .teammate{
@@ -259,8 +249,6 @@ img{
 }
 
 .section-works{
-    padding-top: 94px;
-    padding-bottom: 94px;
     border-top: 1px solid #ececec;
 }
 
@@ -302,6 +290,7 @@ img{
 
 .works .title{
     font-size: 18px;
+    text-align: left;
     line-height: calc(36/18);
     letter-spacing: .06em;
 }
@@ -320,6 +309,13 @@ img{
     margin-right: 30px;
 }
 
+.works .item:nth-child(-n + 3){
+    margin-bottom: 30px;
+}
+
+.works .item:nth-last-child(-n + 3){
+    margin-top: 30px;
+}
 .works .item .title{
     margin-top: 24px;
     margin-bottom: 4px;
