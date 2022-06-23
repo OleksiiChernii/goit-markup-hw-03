@@ -134,10 +134,8 @@ img{
     margin: 0 auto;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-order .container{
+    text-align: center;
 }
 
 .section-order .button{
