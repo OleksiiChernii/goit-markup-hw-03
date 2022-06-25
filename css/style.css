@@ -3,6 +3,7 @@
     --accent: #2196F3;
     --primary-grey: #757575;
     --primary-white: #ffffff;
+    --hero-color: #2F303A;
 }
 
 body{
@@ -17,7 +18,8 @@ h1,
 h2, 
 h3, 
 h4,
-ul, 
+ul,
+li, 
 p{
     margin: 0;
     padding: 0;
@@ -56,14 +58,13 @@ img{
 
 .header-navigation{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .navigation{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-right: auto;
 }
 
 .site-nav .link{
@@ -79,8 +80,6 @@ img{
 }
 
 .logo.link{
-    margin-top: 24px;
-    margin-bottom: 24px;
     margin-right: 94px;
 }
 
@@ -92,6 +91,10 @@ img{
 .site-nav li:not(:last-child),
 .contact-nav li:not(:last-child){
     margin-right: 48px;
+}
+
+.site-nav li{
+    padding: 32px 0;
 }
 
 .site-nav .current,
@@ -117,8 +120,8 @@ img{
 }
 
 .section-order{
-    background-color: #2F303A;
-    color: #ffffff;
+    background-color: var(--hero-color);
+    padding: 200px 0;
 }
 
 .section-order .section-title{
@@ -129,9 +132,9 @@ img{
     letter-spacing: .06em;
     width: 696px;
     text-align: center;
-    padding-top: 106px;
-    padding-bottom: 30px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    color: var(--primary-white);
 }
 
 .section-order .container{
@@ -149,8 +152,6 @@ img{
     padding: 10px 32px;
     background-color: var(--accent);
     color: var(--primary-white);
-    margin: 0 auto;
-    margin-bottom: 106px;
 }
 
 .section-features .title{
@@ -178,9 +179,16 @@ img{
     width: 270px;
 }
 
+.section.about{
+    padding-top: 0;
+}
+
+.section.about>.container>.title{
+    margin-bottom: 50px;
+}
+
 .section.about .list{
     display: flex;
-    margin-top: 50px;
 }
 
 .section.about .item:not(:last-child){
@@ -215,7 +223,6 @@ img{
     font-size: 16px;
     line-height: calc(18.75/16);
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -224,7 +231,15 @@ img{
     line-height: calc(18.75/16);
     text-align: center;
     color: var(--primary-grey);
-    margin-bottom: 30px;
+}
+
+.teammate .thumb{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-footer .logo.link{
+    margin-right: 0;
 }
 
 .page-footer{
@@ -318,14 +333,13 @@ img{
 }
 
 .works .item .title{
-    margin-top: 24px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
-.works .item .description{
-    margin-bottom: 20px;
-    margin-left: 24px;
+.works .thumb{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .visually-hidden {
